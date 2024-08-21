@@ -10,7 +10,7 @@
 // Burn bootloader first, then load program.
 // Programmer: USB ISP, (USBasp). Requires avr-gcc, avrdude.
 // Transmitter: FS1000A at 3.7V, range 10-20m.
-// Antenna: 17.3cm straight wire.e
+// Antenna: 17.3cm straight wire.
 
 // PHY pin 2 -> SW Pin 3
 // PHY pin 3 -> SW Pin 4
