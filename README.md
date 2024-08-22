@@ -18,3 +18,5 @@ Transmitter: FS1000A at 3.7V.
 ### Receiver
 Receiver: RXB6 at 5V (Do not use the simple receiver with a coil, use one with a crystal).
 
+### Millis Blik
+Simple LED blinking example using millis().
