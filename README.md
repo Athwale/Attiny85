@@ -41,4 +41,6 @@ Receiver: RXB6 at 5V (Do not use the simple receiver with a coil, use one with a
 ## Millis Blik
 Simple LED blinking example using millis().
 
+## Basic Blink
+Simplest LED blinking example with delay().
 
