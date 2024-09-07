@@ -44,3 +44,13 @@ Simple LED blinking example using millis().
 ## Basic Blink
 Simplest LED blinking example with delay().
 
+# Attiny13a
+
+## Dot
+Notification software that reacts to high voltage on the input pin.  
+Compilation:  
+avr-gcc -Wall -g -Os -mmcu=attiny13a -o dot.bin dot.c  
+avr-objcopy -j .text -j .data -O ihex dot.bin dot.hex  
+  
+Flashing via USB ISP programmer:  
+avrdude -c usbasp -p attiny13 -U flash:w:dot.hex  
