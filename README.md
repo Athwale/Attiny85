@@ -54,3 +54,6 @@ avr-objcopy -j .text -j .data -O ihex dot.bin dot.hex
   
 Flashing via USB ISP programmer:  
 avrdude -c usbasp -p attiny13 -U flash:w:dot.hex  
+
+## Libraries
+Backup of libraries I used at the time of creating these programs.  
