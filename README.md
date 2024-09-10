@@ -45,7 +45,7 @@ Simple LED blinking example using millis().
 Simplest LED blinking example with delay().
 
 ## No-IDE-Blink
-Simple blinking program without using Arduino IDE.
+Simple blinking program without using Arduino IDE. For attiny13a and attiny85.
 
 # Attiny13a
 
