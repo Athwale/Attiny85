@@ -60,3 +60,6 @@ avrdude -c usbasp -p attiny13 -U flash:w:dot.hex
 
 ## Libraries
 Backup of libraries I used at the time of creating these programs.  
+
+## ISP socket
+PCB design for a 24 pin ZIF socket programming board for ISP programmers.
