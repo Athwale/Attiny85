@@ -47,6 +47,9 @@ Simplest LED blinking example with delay().
 ## No-IDE-Blink
 Simple blinking program without using Arduino IDE. For attiny13a and attiny85.
 
+## Serial
+Simple serial communication examples between two attiny85 for tests.
+
 # Attiny13a
 
 ## Dot
