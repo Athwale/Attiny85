@@ -36,7 +36,9 @@
 #define LED_PIN 4
 #define BLINK_INTERVAL 300
 
-int16_t transmit_data = 32;
+int16_t transmit_pir = 32;
+int16_t transmit_rad = 42;
+int16_t transmit_both = 52;
 
 int radar_state = 0;
 int pir_state = 0;
@@ -65,12 +67,12 @@ void loop() {
   radar_state = digitalRead(RADAR_PIN);
   pir_state = digitalRead(PIR_PIN);
 
-  if (pir_state == 1 ) {
-      man.transmit(transmit_data);
-  }
-  
-  if (radar_state == 1 ) {
-      man.transmit(transmit_data);
+  if (pir_state == 1 && radar_state == 1 ) {
+      man.transmit(transmit_both);
+  } else if (radar_state = 0 && pir_state == 1 ) {
+      man.transmit(transmit_pir);
+  } else if (pir_state = 0  && radar_state == 1) {
+      man.transmit(transmit_rad);
   } 
   delay(1000);
 }
